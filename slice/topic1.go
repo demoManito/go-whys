@@ -9,7 +9,7 @@ type topic1 struct{}
 // A. [1], [2]
 // B. [1], [1, 2]
 // C. [ ], [2]
-// D. panic
+// D. [1], [1]
 func (t *topic1) t1() {
 	a := make([]int, 0, 2)
 
