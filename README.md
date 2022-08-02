@@ -1,10 +1,10 @@
 ## golang 10000 whys
 
 ### slice
-catalogue: [slice](../go-whys/slice)
+catalogue: [slice](./slice)
 
 ### map
-catalogue: [map](../go-whys/map)
+catalogue: [map](./map)
 
 ### defer
-catalogue: [defer](../go-whys/defer)
+catalogue: [defer](./defer)
