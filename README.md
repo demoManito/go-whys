@@ -8,3 +8,6 @@ catalogue: [map](./map)
 
 ### defer
 catalogue: [defer](./defer)
+
+### sync
+catalogue: [sync](./sync)
