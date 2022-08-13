@@ -19,5 +19,9 @@
 ### defer
 1. B
 
-### sync
+### goroutine
 1. A
+
+### range
+1. A
+2. C

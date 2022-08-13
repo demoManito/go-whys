@@ -9,5 +9,8 @@ catalogue: [map](./map)
 ### defer
 catalogue: [defer](./defer)
 
-### sync
-catalogue: [sync](./sync)
+### goroutine
+catalogue: [goroutine](./goroutine)
+
+### range
+catalogue: [range](./range)
