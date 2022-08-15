@@ -7,9 +7,9 @@ import (
 type topic1 struct{}
 
 // A. &{Name:张三 Age:20} &{Name:李四 Age:21}
-// B. &{Name:张三 Age:20} &{Name:张三 Age:20}
+// B. {Name:张三 Age:20} {Name:李四 Age:21}
 // C. &{Name:李四 Age:21} &{Name:李四 Age:21}
-// D. 编译错误
+// D. &{Name:张三 Age:20} &{Name:张三 Age:20}
 func (*topic1) t1() {
 	type user struct {
 		Name string
