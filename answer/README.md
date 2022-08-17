@@ -35,6 +35,7 @@
 
 ### chan
 1. D
+2. A
 
 ### strings
 1. D
