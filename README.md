@@ -14,3 +14,9 @@ catalogue: [goroutine](./goroutine)
 
 ### range
 catalogue: [range](./range)
+
+### chan
+catalogue: [chan](./chan)
+
+### strings
+catalogue: [strings](./strings)

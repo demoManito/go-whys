@@ -51,5 +51,3 @@ func (*topic8) replacePtr(old *[]int) {
 	temp := *old
 	*old = temp[0:2]
 }
-
-

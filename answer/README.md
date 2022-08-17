@@ -19,6 +19,9 @@
 
 ### map
 1. C
+2. C
+3. D
+4. D
 
 ### defer
 1. B
@@ -29,3 +32,9 @@
 ### range
 1. A
 2. C
+
+### chan
+1. D
+
+### strings
+1. D
