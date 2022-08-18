@@ -9,7 +9,7 @@ type topic1 struct{}
 
 // A. panic
 // B. wait
-// C. print "run"
+// C. "run"
 func (t *topic1) t1() {
 	wg := sync.WaitGroup{}
 	wg.Add(1)
