@@ -1,4 +1,4 @@
-package slice
+package _map
 
 import "log"
 

@@ -1,6 +1,6 @@
-package slice
+package _map
 
-type topic4 struct {}
+type topic4 struct{}
 
 // A. true true true
 // B. true true false

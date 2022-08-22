@@ -1,6 +1,6 @@
-package slice
+package _map
 
-type topic3 struct {}
+type topic3 struct{}
 
 // A. &[1:"one"]
 // B. false
