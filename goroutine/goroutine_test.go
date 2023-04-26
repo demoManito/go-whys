@@ -1,4 +1,4 @@
-package strings
+package slice
 
 import "testing"
 

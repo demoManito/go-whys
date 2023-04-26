@@ -1,6 +1,8 @@
-package strings
+package json
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestTopic1(t *testing.T) {
 	Topic1()
