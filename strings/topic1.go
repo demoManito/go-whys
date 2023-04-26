@@ -5,12 +5,11 @@ import (
 	"strings"
 )
 
-type topic1 struct {}
-
+// Topic1 .
 // A. \空格trim
 // B. trim\空格
 // C. trim
 // D. rim
-func (*topic1) t1() {
+func Topic1() {
 	log.Println(strings.Trim("test trim ", "test "))
 }

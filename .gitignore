@@ -1,15 +1,10 @@
 .DS_Store
 runtime
 /vendor
-config.yml
-webconfig.yml
-imconfig.yml
 /.vscode
 /.ssh
 /.idea
 debug
 *.test
 *.out
-cover.xml
 *.lock
-*.db

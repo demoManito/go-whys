@@ -5,15 +5,12 @@ import (
 	"log"
 )
 
-type topic1 struct {
-	// valid JSON encoding
-}
-
+// Topic1 .
 // A. 'true' is not JSON encoding
 // B. 'null' is not JSON encoding
 // C. panic
 // D. no output
-func (*topic1) t1() {
+func Topic1() {
 	if !json.Valid([]byte("true")) {
 		log.Fatal("'true' is not JSON encoding")
 	}
