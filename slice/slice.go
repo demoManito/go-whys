@@ -1,6 +1,8 @@
 package slice
 
-import "log"
+import (
+	"log"
+)
 
 func add(a []int) {
 	a = append(a, 1)
@@ -202,4 +204,68 @@ func Topic13() {
 func replacePtr(old *[]int) {
 	temp := *old
 	*old = temp[0:2]
+}
+
+// Topic14 .
+// A. [] [1] [1]
+// B. [1] [1] [1]
+// C. [] [] [1]
+// D. panic
+func Topic14() {
+	a1 := make([]int, 0, 1)
+	a2 := a1
+
+	a2 = append(a2, 1)
+	log.Println(a1)
+	log.Println(a1[:1])
+	log.Println(a2)
+}
+
+// Topic15 .
+// A. [] [1] [1,2,3]
+// B. [] [0,0] [1,2,3]
+// C. [] [] [1,2,3]
+// D. panic
+func Topic15() {
+	a1 := make([]int, 0, 2)
+	a2 := a1
+
+	a2 = append(a2, 1, 2, 3)
+	log.Println(a1)
+	log.Println(a1[:2])
+	log.Println(a2)
+}
+
+// Topic16 .
+// A. [] [0,0] [1,2,3]
+// B. [9] [9,0] [1,2,3]
+// C. [9] [0,0] [1,2,3]
+// D. panic
+func Topic16() {
+	a1 := make([]int, 0, 2)
+	a2 := a1
+
+	a1 = append(a1, 9)
+	a2 = append(a2, 1, 2, 3)
+	log.Println(a1)
+	log.Println(a1[:2])
+	log.Println(a2)
+}
+
+// Topic17 .
+// A. [] [0,0] [1,2,3,4]
+// B. [] [1,0] [1,2,3,4]
+// C. [2] [2,3] [2,3,4]
+// D. [1] [1,2] [2,3,4]
+func Topic17() {
+	a1 := make([]int, 0, 2)
+	a2 := a1
+
+	a1 = append(a1, 1)
+	a2 = append(a2, 2)
+	a2 = append(a2, 3)
+	a2 = append(a2, 4)
+	log.Println(a1)
+	log.Println(a1[:2])
+	log.Println(a2)
 }

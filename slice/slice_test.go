@@ -53,3 +53,19 @@ func TestTopic12(t *testing.T) {
 func TestTopic13(t *testing.T) {
 	Topic13()
 }
+
+func TestTopic14(t *testing.T) {
+	Topic14()
+}
+
+func TestTopic15(t *testing.T) {
+	Topic15()
+}
+
+func TestTopic16(t *testing.T) {
+	Topic16()
+}
+
+func TestTopic17(t *testing.T) {
+	Topic17()
+}
