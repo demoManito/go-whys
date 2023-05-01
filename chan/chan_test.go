@@ -9,3 +9,7 @@ func TestTopic1(t *testing.T) {
 func TestTopic2(t *testing.T) {
 	Topic2()
 }
+
+func TestTopic3(t *testing.T) {
+	Topic3()
+}
