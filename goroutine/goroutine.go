@@ -1,7 +1,6 @@
 package slice
 
 import (
-	"log"
 	"sync"
 )
 
@@ -11,7 +10,7 @@ import (
 // C. "run"
 func Topic1() {
 	run := func(wg sync.WaitGroup) {
-		log.Println("run")
+		println("run")
 		wg.Done()
 	}
 

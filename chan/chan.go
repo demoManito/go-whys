@@ -2,7 +2,6 @@ package _chan
 
 import (
 	"context"
-	"log"
 )
 
 // Topic1 .
@@ -13,7 +12,7 @@ import (
 func Topic1() {
 	c := make(chan int, 1)
 	<-c
-	log.Println(1)
+	println(1)
 }
 
 // Topic2 .
@@ -23,7 +22,18 @@ func Topic1() {
 func Topic2() {
 	ctx, _ := context.WithTimeout(context.Background(), 0)
 	<-ctx.Done()
-	log.Println(1)
+	println(1)
+}
+
+// Topic3 .
+// A. 1
+// B. 阻塞
+// C. 编译失败
+// D. panic
+func Topic3() {
+	c := make(chan int)
+	c <- 1
+	println(<-c)
 }
 
 // Topic3 .

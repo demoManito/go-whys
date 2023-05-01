@@ -1,7 +1,6 @@
 package _map
 
 import (
-	"log"
 	"net/url"
 	"sync"
 )
@@ -13,7 +12,7 @@ import (
 // D. panic
 func Topic1() {
 	a := map[int]string{1: "hello", 2: "world", 96: "!"}
-	log.Println(a['a'])
+	println(a['a'])
 }
 
 // Topic2
@@ -38,7 +37,7 @@ func Topic2() {
 		}
 	}()
 	wg.Wait()
-	log.Println(m)
+	println(m)
 }
 
 // Topic3 .
@@ -48,7 +47,7 @@ func Topic2() {
 // 无法编译
 func Topic3() {
 	// m := map[int]interface{}{1: "one", 2: "two"}
-	// log.Println(&m[1])
+	// println(&m[1])
 }
 
 // Topic4 .
@@ -59,9 +58,9 @@ func Topic3() {
 func Topic4() {
 	// var m1 map[int]interface{}
 	// var m2 map[int]interface{}
-	// log.Println(m1 == nil)
-	// log.Println(m2 == nil)
-	// log.Println(m1 == m2)
+	// println(m1 == nil)
+	// println(m2 == nil)
+	// println(m1 == m2)
 }
 
 // Topic5 .
@@ -74,5 +73,5 @@ func Topic5() {
 		url.Values // Values type: map[string][]string
 	}
 	query.Set("name", "jesse")
-	log.Println(query.Get("name"))
+	println(query.Get("name"))
 }

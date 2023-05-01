@@ -1,7 +1,6 @@
 package strings
 
 import (
-	"log"
 	"strings"
 )
 
@@ -11,5 +10,5 @@ import (
 // C. trim
 // D. rim
 func Topic1() {
-	log.Println(strings.Trim("test trim ", "test "))
+	println(strings.Trim("test trim ", "test "))
 }
