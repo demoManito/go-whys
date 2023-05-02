@@ -15,6 +15,6 @@ func Topic1() {
 		log.Fatal("'true' is not JSON encoding")
 	}
 	if !json.Valid([]byte("null")) {
-		log.Println("'null' is not JSON encoding")
+		println("'null' is not JSON encoding")
 	}
 }

@@ -1,19 +1,14 @@
 package slice
 
-import (
-	"fmt"
-	"log"
-)
-
 // Topic1 .
 // A. a b
 // B. b a
 // C. a a
 // D. b b
 func Topic1() {
-	f := func() { log.Println("a") }
+	f := func() { println("a") }
 	defer f()
-	f = func() { log.Println("b") }
+	f = func() { println("b") }
 	defer f()
 }
 
@@ -25,16 +20,16 @@ func Topic1() {
 func Topic2() {
 	for i := 0; i < 10; i++ {
 		defer func() {
-			fmt.Println(i)
+			println(i)
 		}()
 	}
 }
 
 // Topic3 .
-// A. 11
-// B. 01
-// C. 10
-// D. 00
+// A. 1 1
+// B. 0 1
+// C. 1 0
+// D. 0 0
 func Topic3() {
 	incr := func(i int) int {
 		i++
@@ -43,15 +38,15 @@ func Topic3() {
 
 	i := 0
 
-	defer fmt.Print(incr(i))
-	fmt.Print(i)
+	defer println(incr(i))
+	println(i)
 }
 
 // Topic4 .
-// A. 11
-// B. 01
-// C. 10
-// D. 00
+// A. 1 1
+// B. 0 1
+// C. 1 0
+// D. 0 0
 func Topic4() {
 	i := 0
 
@@ -60,6 +55,6 @@ func Topic4() {
 		return i
 	}
 
-	defer fmt.Print(incr())
-	fmt.Print(i)
+	defer println(incr())
+	println(i)
 }

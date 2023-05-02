@@ -1,9 +1,5 @@
 package slice
 
-import (
-	"log"
-)
-
 func add(a []int) {
 	a = append(a, 1)
 }
@@ -17,10 +13,10 @@ func Topic1() {
 	a := make([]int, 0, 2)
 
 	add(a)
-	log.Println(a)
+	println(a)
 
 	a = append(a, 2)
-	log.Println(a)
+	println(a)
 }
 
 // Topic2 .
@@ -32,10 +28,10 @@ func Topic2() {
 	a := make([]int, 0, 2)
 
 	add(a)
-	log.Println(a[:1])
+	println(a[:1])
 
 	a = append(a, 2)
-	log.Println(a[:1])
+	println(a[:1])
 }
 
 // Topic3 .
@@ -47,10 +43,10 @@ func Topic3() {
 	a := make([]int, 0, 2)
 
 	a = append(a, 2)
-	log.Println(a)
+	println(a)
 
 	add(a)
-	log.Println(a)
+	println(a)
 }
 
 // Topic4 .
@@ -62,7 +58,7 @@ func Topic4() {
 	a := []int{1, 2}
 
 	swap(a)
-	log.Println(a)
+	println(a)
 }
 
 func swap(a []int) {
@@ -78,7 +74,7 @@ func Topic5() {
 	a := []int{1, 2}
 
 	swapAndAdd(a)
-	log.Println(a)
+	println(a)
 }
 
 func swapAndAdd(a []int) {
@@ -95,7 +91,7 @@ func Topic6() {
 	a := []int{1, 2}
 
 	addAndSwap(a)
-	log.Println(a)
+	println(a)
 }
 
 func addAndSwap(a []int) {
@@ -114,7 +110,7 @@ func Topic7() {
 	a[1] = 2
 
 	addAndSwap(a)
-	log.Println(a)
+	println(a)
 }
 
 // Topic8 .
@@ -130,7 +126,7 @@ func Topic8() {
 	}
 	a['a'] = 1000
 
-	log.Println(len(a))
+	println(len(a))
 }
 
 // Topic9
@@ -142,7 +138,7 @@ func Topic9() {
 	var a [100]int
 	var t interface{} = [...]int{99: 0}
 
-	log.Println(a == t)
+	println(a == t)
 }
 
 // Topic10 .
@@ -154,7 +150,7 @@ func Topic10() {
 	a := []int{}
 	add(a)
 	a = append(a, 2)
-	log.Println(a)
+	println(a)
 }
 
 // Topic11 .
@@ -165,7 +161,7 @@ func Topic10() {
 func Topic11() {
 	old := []int{1, 2, 3, 4}
 	addOld(old)
-	log.Println(old)
+	println(old)
 }
 
 func addOld(old []int) {
@@ -181,7 +177,7 @@ func addOld(old []int) {
 func Topic12() {
 	old := []int{1, 2, 3, 4}
 	replace(old)
-	log.Println(old)
+	println(old)
 }
 
 func replace(old []int) {
@@ -198,7 +194,7 @@ func replace(old []int) {
 func Topic13() {
 	old := &[]int{1, 2, 3, 4}
 	replacePtr(old)
-	log.Println(*old)
+	println(*old)
 }
 
 func replacePtr(old *[]int) {
@@ -216,9 +212,9 @@ func Topic14() {
 	a2 := a1
 
 	a2 = append(a2, 1)
-	log.Println(a1)
-	log.Println(a1[:1])
-	log.Println(a2)
+	println(a1)
+	println(a1[:1])
+	println(a2)
 }
 
 // Topic15 .
@@ -231,9 +227,9 @@ func Topic15() {
 	a2 := a1
 
 	a2 = append(a2, 1, 2, 3)
-	log.Println(a1)
-	log.Println(a1[:2])
-	log.Println(a2)
+	println(a1)
+	println(a1[:2])
+	println(a2)
 }
 
 // Topic16 .
@@ -247,9 +243,9 @@ func Topic16() {
 
 	a1 = append(a1, 9)
 	a2 = append(a2, 1, 2, 3)
-	log.Println(a1)
-	log.Println(a1[:2])
-	log.Println(a2)
+	println(a1)
+	println(a1[:2])
+	println(a2)
 }
 
 // Topic17 .
@@ -265,7 +261,7 @@ func Topic17() {
 	a2 = append(a2, 2)
 	a2 = append(a2, 3)
 	a2 = append(a2, 4)
-	log.Println(a1)
-	log.Println(a1[:2])
-	log.Println(a2)
+	println(a1)
+	println(a1[:2])
+	println(a2)
 }
