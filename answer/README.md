@@ -1,37 +1,37 @@
 ## ANSWER
 
-### chan
+### [chan](ANSWER_CHAN.md)
 1. D
 2. A
 3. D
 
-### defer
+### [defer](ANSWER_DEFER.md)
 1. B
 2. C
 3. B
 4. A
 
-### goroutine
+### [goroutine](ANSWER_GOROUTINE.md)
 1. A
 
-### interface
+### [interface](ANSWER_INTERFACE.md)
 1. C
 
-### json
+### [json](ANSWER_JSON.md)
 1. D
 
-### map
+### [map](ANSWER_MAP.md)
 1. C
 2. C
 3. D
 4. D
 5. A
 
-### range
+### [range](ANSWER_RANGE.md)
 1. A
 2. C
 
-### slice
+### [slice](ANSWER_SLICE.md)
 1. C
 2. A
 3. C
@@ -50,5 +50,5 @@
 16. B
 17. C
 
-### strings
+### [strings](ANSWER_STRINGS.md)
 1. D
