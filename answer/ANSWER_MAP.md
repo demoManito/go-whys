@@ -1,0 +1,4 @@
+## ANSWER AND QUESTIONS OF MAP
+
+1. C  
+**
