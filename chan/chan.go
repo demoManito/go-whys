@@ -35,14 +35,3 @@ func Topic3() {
 	c <- 1
 	println(<-c)
 }
-
-// Topic3 .
-// A. 1
-// B. 阻塞
-// C. 编译失败
-// D. panic
-func Topic3() {
-	c := make(chan int)
-	c <- 1
-	log.Println(<-c)
-}
