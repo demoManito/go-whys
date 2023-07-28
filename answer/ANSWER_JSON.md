@@ -1,1 +1,3 @@
 ## ANSWER AND QUESTIONS OF JSON
+1. B  
+*（其实不会）*
